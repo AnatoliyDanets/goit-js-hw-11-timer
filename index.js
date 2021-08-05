@@ -7,6 +7,7 @@ class CountdownTimer {
         this.selector = selector;
         this.targetDate = targetDate;
         this.intervalId = null;
+        this.start();
     }
 
     start() {
@@ -45,14 +46,15 @@ class CountdownTimer {
         allowSecs.textContent = secs;
 
     }
+   
 };
 const countDown = new CountdownTimer({
     selector: '#timer-1',
-    targetDate: new Date('Aug 6, 2021, 15:38:00'),
+    targetDate: new Date('Aug 6, 2021, 21:38:00'),
 });
 const countDown2 = new CountdownTimer({
     selector: '#timer-2',
     targetDate: new Date('Aug 7, 2021'),
 });
-countDown.start();
-countDown2.start();
+// countDown.start();
+// countDown2.start();
